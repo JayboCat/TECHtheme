@@ -1,0 +1,115 @@
+/**
+ * @name Tech
+ * @author _roach.
+ * @version 7.0.1
+ * @description Signalis inspired theme :]
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+/* SETTINGS */
+:root {
+border-radius: 0px;
+  /* ACCENT COLORS */
+  --main-color: #FF0000; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: rgba(0, 255, 0, 1); /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: rgba(255, 255, 0, 1); /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: rgba(0, 255, 0, 1); /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: rgba(255, 255, 0, 1); /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: red; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: purple; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: grey; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  /* APP BACKGROUND */
+  --background-shading: red; /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --background-shading-percent: 80%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
+  --background-image: ;
+  /* USER POPOUT BACKGROUND */
+  --popout-shading: red; /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size (px) [default: var(--background-size)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* USER MODAL BACKGROUND */
+  --modal-shading: rgba(0, 0, 0, 0.9); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size (px) [default: var(--background-size)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* HOME ICON */
+  --home-icon: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAACXBIWXMAADXUAAA11AFeZeUIAAABWUlEQVRIDd2Vy27DMAwE7SL//8uuaWvYJfWwIiCHNIdYXC5nRaNBt+2/f/Y3Fzw6/mnOqwMYypo6nVSIP0NybHpOI8R7caSu3gncjJrJua4jojIbeGSwbll62RKTSjUTWIEq4Q89aN2mmUB/jbYVmxmZs6Eek8x0fp4CHzkaeiPH2U+BPg1YN8u3yXW5QHiMAqv5SigoLiPknnX8SpkyIGeghGQ91/h59jb0nwFgBlpPC1FfCW1mtwIrowoK1rNdJNenpKNmab9SXA3ANXR+WSu0mcGQa/S8YeVTISQUQtZyfdoUUW9I1wY5c7tGRuDjR6TWed3Q+wyosaXR155DaN5Pl/FeAqqJnM2P6Z6d++7M7/4PGEMPTn8uLrpsFq69UmchuiDGiFiuDt8QhIah2ZPLqLZyhuM5flihdWYIOds7f6WidaYWZQFfR6kv4icWNHDOWbz+N4z9AuoeQSBGyV/KAAAAAElFTkSuQmCC'); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-size: 28px; /* home button icon size (px) [default:cover] */
+  /* FONTS */
+  --normal-text: #fff; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
+  --main-font: "OCRA"; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: "Pokémon DP Pro"; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  /* CHANNEL COLORS */
+  --card-shading: rgba(55, 0, 0, 0.5); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --channel-normal: white; /* channel text color [default: var(--interactive-normal)] */
+  --channel-muted: maroon; /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: red; /* hovered channel text color [default: var(--interactive-hover)] */
+  --channel-hover-bg: red;
+  --channel-selected: red; /* selected channel text color [default: var(--interactive-active)] */
+  --channel-selected-bg: rgba(255,0,0,.2); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: rgba(255,0,0,0); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --input-shading: red; /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --hover-color: rgba(255,0,0,1);
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
+
+/*SHARP EDGES*/
+[class*="container"],[role*="link"],[class*="wrapper"],[class*="stack"],[class*="scroll"],[class*="containerDefault"],[class*="channel"],[class*="pill"],[class*="folder"],[class*="listItem"], div, button, [role*="menuitem"], [role*="button"], li {
+  border-radius: 0px;
+  border-color: red;
+  border-width: 1px;
+}
+/*UNREAD INDICATORS AND MARGINS*/
+[class*="unreadImportant"], .item__58105 {
+	background-color: black;
+	border-radius: 0px;
+	box-shadow: none;
+	border-style: solid;
+	border-width: 3px;
+	border-color: red;
+	width:15px;
+}
+/*folder area*/
+.wrapper_ef3116 {
+	padding: 0px;
+    width: 90px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--danger-color);
+}
+.folderGroup__48112 {
+	margin-left:20px;
+}
+/*channel bar*/
+.sidebarList__5e434 {
+	width:360px;
+	margin-left: 10px;
+}
+/*CHANNEL BORDERS*/
+.iconVisibility_c69b6d, .iconVisibility__29444, .mainContent__29444{
+	border-radius: 0px;
+	border-color: red;
+	border-width: 2px;
+	border-style:solid;
+	margin: 4px;
+	padding: 0px;
+	font-size: 2px;
+}
+/*AVATARS*/
+.avatar_c19a55 {
+  border-radius: 0px;
+  border-width: 2px;
+  border-style:solid;
+  border-color: red;
+  background-size: cover;
+}
