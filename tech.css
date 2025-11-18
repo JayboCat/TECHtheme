@@ -12,7 +12,6 @@
 @import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
 /* SETTINGS */
 :root {
-border-radius: 0px;
   /* ACCENT COLORS */
   --main-color: #FF0000; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
   --success-color: rgba(0, 255, 0, 1); /* positive accent color (hex, rgb or hsl) [default: #43b581] */
@@ -77,7 +76,8 @@ border-radius: 0px;
 	border-style: solid;
 	border-width: 3px;
 	border-color: red;
-	width:15px;
+	width:10px;
+	margin-right: 10px;
 }
 /*CHANNEL BORDERS*/
 .iconVisibility_c69b6d, .iconVisibility__29444, .mainContent__29444{
@@ -92,7 +92,7 @@ border-radius: 0px;
 /*TILE SIZING*/
 /*channel bar*/
 .wrapper_ef3116  {
-	width:360px;
+	width:380px;
 	margin-left: 10px;
 }
 /*folder area*/
